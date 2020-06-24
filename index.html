@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input id="result" class="result" type="text">
+        <div class="buttons">
+        <div><button data-key="  " id="  " value="" onclick="percentage()" class="sign">%</button></div>
+        <div><button data-key="  " id="  " value="" onclick="number('')" class="sign">CE</button></div>
+        <div><button data-key="  " id="  " value="" onclick="clearResult()" class="sign">C</button></div>
+        <div><button data-key="8"   id="8" value="" onclick="backspace()" class="sign"><i><img src="61167.svg" alt="" width="15px"></i></button></div>
+    </div>
+    <div class="buttons">
+        <div><button data-key="  " id="  " value="" onclick="inverse()" class="sign">1/x</button></div>
+        <div><button data-key="  " id="  " value="" onclick="square('^2')" class="sign">x^2</button></div>
+        <div><button data-key="  " id="  " value="" onclick="squareroot()" class="sign">2√x</button></div>
+        <div><button data-key="111" id="111" value="" onclick="number('/')" class="sign">÷</button></div>
+    </div>
+    <div class="buttons">
+        <div><button data-key="55" id="55" value="7" onclick="number('7')">7</button></div>
+        <div><button data-key="56" id="56" value="8" onclick="number('8')">8</button></div>
+        <div><button data-key="57" id="57" value="9" onclick="number('9')">9</button></div>
+        <div><button data-key="106" id="106" value="*" onclick="number('*')" class="sign">X</button></div>
+    </div>
+    <div class="buttons">
+        <div><button data-key="52" id="52" value="4" onclick="number('4')">4</button></div>
+        <div><button data-key="53" id="53" value="5" onclick="number('5')">5</button></div>
+        <div><button data-key="54" id="54" value="6" onclick="number('6')">6</button></div>
+        <div><button data-key="109" id="109" value="-" onclick="number('-')" class="sign">-</button></div>
+    </div>
+    <div class="buttons">
+        <div><button data-key="49" id="49" value="1" onclick="number('1')">1</button></div>
+        <div><button data-key="50" id="50" value="2" onclick="number('2')">2</button></div>
+        <div><button data-key="51" id="51" value="3" onclick="number('3')">3</button></div>
+        <div><button data-key="107" id="107"  value="+" onclick="number('+')" class="sign">+</button></div>
+    </div>
+    <div class="buttons">
+        <div><button data-key="  " id="  " value="" onclick="plus_minus()">+/-</button></div>
+        <div><button data-key="48" id="48" value="0" onclick="number('0')">0</button></div>
+        <div><button data-key="190" id="190" value="." onclick="number('.')">.</button></div>
+        <div><button style="background-color: skyblue !important;" data-key="13" id="13" value="" onclick="getResult()" class="sign">=</button></div>
+    </div>
+    
+</div>
+    
+</body>
+<script src="app.js"></script>
+</html>
